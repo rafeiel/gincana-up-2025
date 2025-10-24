@@ -28,7 +28,7 @@ export const dadosGincana = {
       total: 41875
     },
     "Vermelha": {
-      cor: "#E74C3C",
+      cor: "#FF0000",
       tarefas_antecipadas: 11500,
       tarefas_esportivas: 4300,
       tarefas_dia_efii_em: 6500,

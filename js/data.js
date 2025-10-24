@@ -49,7 +49,7 @@ const dadosGincana = {
     {
       id: 4,
       nome: "VERMELHA",
-      cor: "#E74C3C",
+      cor: "#FF0000",
       posicao: 4,
       medal: "",
       total: 40725,

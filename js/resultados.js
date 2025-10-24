@@ -24,7 +24,7 @@ function renderTask(task) {
       <div class="task-points ${task.rosa === maxPoints && maxPoints > 0 ? 'winner' : ''}" style="color: #E91E63;">
         ${task.rosa.toLocaleString('pt-BR')}
       </div>
-      <div class="task-points ${task.vermelha === maxPoints && maxPoints > 0 ? 'winner' : ''}" style="color: #E74C3C;">
+      <div class="task-points ${task.vermelha === maxPoints && maxPoints > 0 ? 'winner' : ''}" style="color: #FF0000;">
         ${task.vermelha.toLocaleString('pt-BR')}
       </div>
     </div>
@@ -56,7 +56,7 @@ function renderRankingTable() {
       <td>${equipe.pontos.esportivas.toLocaleString('pt-BR')}</td>
       <td>${equipe.pontos.diaSurpresa.toLocaleString('pt-BR')}</td>
       <td>${equipe.pontos.diaEFI.toLocaleString('pt-BR')}</td>
-      <td style="color: #E74C3C;">${equipe.pontos.penalidades.toLocaleString('pt-BR')}</td>
+      <td style="color: #FF0000;">${equipe.pontos.penalidades.toLocaleString('pt-BR')}</td>
     `;
     
     tbody.appendChild(row);
@@ -142,7 +142,7 @@ function renderPenalidades() {
         <div class="task-points" style="color: #E91E63;">
           ${task.rosa > 0 ? '-' : ''}${task.rosa.toLocaleString('pt-BR')}
         </div>
-        <div class="task-points" style="color: #E74C3C;">
+        <div class="task-points" style="color: #FF0000;">
           ${task.vermelha > 0 ? '-' : ''}${task.vermelha.toLocaleString('pt-BR')}
         </div>
       </div>

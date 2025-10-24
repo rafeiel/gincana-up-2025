@@ -131,7 +131,7 @@ Fase 4 (9-11s):   🥇 1º LUGAR - EQUIPE VERDE - 46.305 (COM DESTAQUE)
 - **🟣 Roxa**: #8B3A9C (roxo vibrante)
 - **🟢 Verde**: #2ECC71 (verde esmeralda)
 - **🌸 Rosa**: #FF69B4 (rosa pink)
-- **🔴 Vermelha**: #E74C3C (vermelho vivo)
+- **🔴 Vermelha**: #FF0000 (vermelho vivo)
 
 ### Fundos:
 - **Home**: Gradiente azul escuro (#1e3c72 → #2a5298)
