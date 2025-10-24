@@ -12,13 +12,13 @@
   <header class="header">
     <div class="logo-container">
       <div class="logo logo-up">
-        LOGO<br>COLÉGIO UP
+        <img src="public/images/logo-up.png" alt="Colégio UP" style="width: 100%; height: 100%; object-fit: contain;">
       </div>
       <div class="logo logo-gincana">
-        GINCANA<br>UP<br>2025
+        <img src="public/images/logo-gincana.png" alt="Gincana UP 2025" style="width: 100%; height: 100%; object-fit: contain;">
       </div>
       <div class="logo logo-unesco">
-        LOGO<br>UNESCO
+        <img src="public/images/logo-unesco.png" alt="UNESCO" style="width: 100%; height: 100%; object-fit: contain;">
       </div>
     </div>
   </header>
@@ -53,32 +53,42 @@
     <div class="tabs-container">
       <div class="tabs-nav">
         <button class="tab-btn active" data-tab="antecipadas">
-          📋 Tarefas Antecipadas
+          Tarefas Antecipadas
         </button>
         <button class="tab-btn" data-tab="esportivas">
-          ⚽ Tarefas Esportivas
+          Tarefas Esportivas
         </button>
         <button class="tab-btn" data-tab="responsaveis">
-          👨‍👩‍👧‍👦 Tarefas (Responsáveis)
+          Tarefas (Responsáveis)
         </button>
         <button class="tab-btn" data-tab="efi">
-          🎯 Tarefas (Fund. I)
+          Tarefas (Fund. I)
         </button>
         <button class="tab-btn" data-tab="penalidades">
-          ⚠️ Penalidades
+          Penalidades
         </button>
       </div>
 
       <!-- Tab 1: Tarefas Antecipadas -->
       <div class="tab-content active" id="tab-antecipadas">
         <div class="category-section">
-          <h3 class="category-title">🎨 DNA da Equipe</h3>
+          <h3 class="category-title">DNA da Equipe</h3>
           <div id="dnaEquipe"></div>
         </div>
 
         <div class="category-section">
-          <h3 class="category-title">🎯 Caça ao Tesouro</h3>
-          <div id="cacaTesouro"></div>
+          <h3 class="category-title">Tarefas Solidárias</h3>
+          <div id="solidarias"></div>
+        </div>
+
+        <div class="category-section">
+          <h3 class="category-title">Tarefas Acadêmicas</h3>
+          <div id="academicas"></div>
+        </div>
+
+        <div class="category-section">
+          <h3 class="category-title">Circuito UP</h3>
+          <div id="circuito"></div>
         </div>
 
         <div class="category-total">
@@ -93,7 +103,7 @@
       <!-- Tab 2: Tarefas Esportivas -->
       <div class="tab-content" id="tab-esportivas">
         <div class="category-section">
-          <h3 class="category-title">⚽ Modalidades Esportivas</h3>
+          <h3 class="category-title">Modalidades Esportivas</h3>
           <div id="esportivas"></div>
         </div>
 
@@ -109,7 +119,7 @@
       <!-- Tab 3: Tarefas Responsáveis -->
       <div class="tab-content" id="tab-responsaveis">
         <div class="category-section">
-          <h3 class="category-title">👨‍👩‍👧‍👦 Tarefas do Dia - Responsáveis</h3>
+          <h3 class="category-title">Tarefas do Dia - Responsáveis</h3>
           <div id="responsaveis"></div>
         </div>
 
@@ -125,7 +135,7 @@
       <!-- Tab 4: Tarefas EF I -->
       <div class="tab-content" id="tab-efi">
         <div class="category-section">
-          <h3 class="category-title">🎯 Tarefas do Dia - Ensino Fundamental I</h3>
+          <h3 class="category-title">Tarefas do Dia - Ensino Fundamental I</h3>
           <div id="efi"></div>
         </div>
 
@@ -141,7 +151,7 @@
       <!-- Tab 5: Penalidades -->
       <div class="tab-content" id="tab-penalidades">
         <div class="category-section">
-          <h3 class="category-title">⚠️ Penalidades em Geral</h3>
+          <h3 class="category-title">Penalidades em Geral</h3>
           <div id="penalidades"></div>
         </div>
 
@@ -158,6 +168,7 @@
     <!-- Botões de Navegação -->
     <div class="nav-buttons">
       <a href="index.html" class="btn btn-secondary">← Voltar ao Início</a>
+      <a href="scroll.html" class="btn btn-primary">Ver Animação Scroll</a>
       <a href="campeoes.html" class="btn btn-primary">Ver Página da Campeã →</a>
     </div>
   </main>
