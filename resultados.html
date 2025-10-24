@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resultados Detalhados da 5ª Gincana Estudantil UP 2025">
+  <title>Resultados Detalhados - Gincana UP 2025</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header com Logos -->
+  <header class="header">
+    <div class="logo-container">
+      <div class="logo logo-up">
+        LOGO<br>COLÉGIO UP
+      </div>
+      <div class="logo logo-gincana">
+        GINCANA<br>UP<br>2025
+      </div>
+      <div class="logo logo-unesco">
+        LOGO<br>UNESCO
+      </div>
+    </div>
+  </header>
+
+  <!-- Container Principal -->
+  <main class="container">
+    <h1 class="page-title">Resultados Detalhados</h1>
+    <h2 class="page-subtitle">5ª Gincana Estudantil 2025</h2>
+
+    <!-- Ranking Final -->
+    <div class="ranking-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Posição</th>
+            <th>Equipe</th>
+            <th>Total</th>
+            <th>Antecipadas</th>
+            <th>Esportivas</th>
+            <th>Dia (EFII/EM)</th>
+            <th>Dia (EFI)</th>
+            <th>Penalidades</th>
+          </tr>
+        </thead>
+        <tbody id="rankingTableBody">
+          <!-- Preenchido via JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tabs de Categorias -->
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="antecipadas">
+          📋 Tarefas Antecipadas
+        </button>
+        <button class="tab-btn" data-tab="esportivas">
+          ⚽ Tarefas Esportivas
+        </button>
+        <button class="tab-btn" data-tab="responsaveis">
+          👨‍👩‍👧‍👦 Tarefas (Responsáveis)
+        </button>
+        <button class="tab-btn" data-tab="efi">
+          🎯 Tarefas (Fund. I)
+        </button>
+        <button class="tab-btn" data-tab="penalidades">
+          ⚠️ Penalidades
+        </button>
+      </div>
+
+      <!-- Tab 1: Tarefas Antecipadas -->
+      <div class="tab-content active" id="tab-antecipadas">
+        <div class="category-section">
+          <h3 class="category-title">🎨 DNA da Equipe</h3>
+          <div id="dnaEquipe"></div>
+        </div>
+
+        <div class="category-section">
+          <h3 class="category-title">🎯 Caça ao Tesouro</h3>
+          <div id="cacaTesouro"></div>
+        </div>
+
+        <div class="category-total">
+          <div><strong>TOTAL TAREFAS ANTECIPADAS</strong></div>
+          <div id="totalAntRoxa" style="color: #8B27C4;"></div>
+          <div id="totalAntVerde" style="color: #2ECC71;"></div>
+          <div id="totalAntRosa" style="color: #E91E63;"></div>
+          <div id="totalAntVermelha" style="color: #E74C3C;"></div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Tarefas Esportivas -->
+      <div class="tab-content" id="tab-esportivas">
+        <div class="category-section">
+          <h3 class="category-title">⚽ Modalidades Esportivas</h3>
+          <div id="esportivas"></div>
+        </div>
+
+        <div class="category-total">
+          <div><strong>TOTAL TAREFAS ESPORTIVAS</strong></div>
+          <div id="totalEspRoxa" style="color: #8B27C4;"></div>
+          <div id="totalEspVerde" style="color: #2ECC71;"></div>
+          <div id="totalEspRosa" style="color: #E91E63;"></div>
+          <div id="totalEspVermelha" style="color: #E74C3C;"></div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Tarefas Responsáveis -->
+      <div class="tab-content" id="tab-responsaveis">
+        <div class="category-section">
+          <h3 class="category-title">👨‍👩‍👧‍👦 Tarefas do Dia - Responsáveis</h3>
+          <div id="responsaveis"></div>
+        </div>
+
+        <div class="category-total">
+          <div><strong>TOTAL TAREFAS RESPONSÁVEIS</strong></div>
+          <div id="totalRespRoxa" style="color: #8B27C4;"></div>
+          <div id="totalRespVerde" style="color: #2ECC71;"></div>
+          <div id="totalRespRosa" style="color: #E91E63;"></div>
+          <div id="totalRespVermelha" style="color: #E74C3C;"></div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Tarefas EF I -->
+      <div class="tab-content" id="tab-efi">
+        <div class="category-section">
+          <h3 class="category-title">🎯 Tarefas do Dia - Ensino Fundamental I</h3>
+          <div id="efi"></div>
+        </div>
+
+        <div class="category-total">
+          <div><strong>TOTAL TAREFAS E.F.I</strong></div>
+          <div id="totalEfiRoxa" style="color: #8B27C4;"></div>
+          <div id="totalEfiVerde" style="color: #2ECC71;"></div>
+          <div id="totalEfiRosa" style="color: #E91E63;"></div>
+          <div id="totalEfiVermelha" style="color: #E74C3C;"></div>
+        </div>
+      </div>
+
+      <!-- Tab 5: Penalidades -->
+      <div class="tab-content" id="tab-penalidades">
+        <div class="category-section">
+          <h3 class="category-title">⚠️ Penalidades em Geral</h3>
+          <div id="penalidades"></div>
+        </div>
+
+        <div class="category-total" style="background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.4);">
+          <div><strong>TOTAL PENALIDADES</strong></div>
+          <div id="totalPenRoxa" style="color: #8B27C4;"></div>
+          <div id="totalPenVerde" style="color: #2ECC71;"></div>
+          <div id="totalPenRosa" style="color: #E91E63;"></div>
+          <div id="totalPenVermelha" style="color: #E74C3C;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botões de Navegação -->
+    <div class="nav-buttons">
+      <a href="index.html" class="btn btn-secondary">← Voltar ao Início</a>
+      <a href="campeoes.html" class="btn btn-primary">Ver Página da Campeã →</a>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/resultados.js"></script>
+</body>
+</html>
